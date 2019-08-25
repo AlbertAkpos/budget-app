@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Budget App</title>
+</head>
+<body>
+    <div class="container">
+        <form class="budget">
+            <label for="budget">Please Enter Your Budget</label><br>
+            <input type="number" id="budget-input"><br>
+            <input type="submit" id="budget-button" value="Calculate">
+        </form>
+        <div class="output">
+            <ul>
+                <li><p style="background: rgb(30, 134, 61); padding: 0.5rem; color: #fff; border-radius: 3px;">BUDGET</p><img src="img/icons8-heart-outline-50.png" alt=""><p class="budget-feedback"> $ <span class = "budget-count">0</span></p></li>
+                <li><p style="background: rgb(201, 38, 38); padding: 0.5rem; color: #fff; border-radius: 3px;">EXPENSES</p><img src="img/icons8-heart-outline-50.png" alt=""><p class="expense-feedback">$ <span class="expense-count">0</span></p></li>
+                <li><p style = "padding: 0.5rem;" class= "display-balance">BALANCE</p><img src="img/icons8-heart-outline-50.png" alt=""><p class="balance-feedback balance-positive balance-negative">$ <span class="balance-count"> 0</span></p></li>
+            </ul>
+        </div>
+
+        <form class="expenses" autocomplete="off">
+            <label for="expenses">Please Enter Your Expense</label><br>
+            <input type="text" id="expenses"><br>
+            <label for="expenses-amount">Please Enter Your Expenses Amount</label><br>
+            <input type="text" id="expenses-amount">
+            <input type="submit" id="expenses-button">
+        </form>
+
+        <div class="expense-list">
+            <!-- <ul>
+                <li>this is list one this <span>500</span> <button class="edit">Edit</button><button class="delete">Delete</button></li>
+                <li>this is list one <span>500</span><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                <li>this is list one <span>500</span> <button class="edit">Edit</button><button class="delete">Delete</button></li>
+                <li>this is list one <span>500</span> <button class="edit">Edit</button><button class="delete">Delete</button></li>
+               
+            </ul> -->
+        </div>
+
+        
+    </div>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
